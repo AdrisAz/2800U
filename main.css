@@ -5,11 +5,19 @@ h1 {
 }
 .Fields{
   background-color:white;
+  width:1050px;
+  margin:0 auto;
 }
+#Open{
+font-size: 19px;
+}
+
 .topnav {
 background-color:rgb(255,255,155) ;
 overflow: hidden;
 border:1px solid black;
+width:1050px;
+margin:0 auto;
 }
 .topnav a {
 float: left;
@@ -19,7 +27,7 @@ padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
 }
-.topnav a:hover {
+.topnav a:hover  {
 background-color:grey;
 color: black;
 }
@@ -27,6 +35,48 @@ color: black;
 background-color:Black;
 color: White;
 }
+
 body{
   background-color:rgb(149,228,255);
+}
+.images{
+  height:200px;
+  	width: 200px;
+    border:3px solid black;
+}
+.center{
+  text-align:center;
+}
+.Mredirect {
+  background-color: Green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+
+  font-size: 16px;
+  width:200px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+
+border: 2px solid green;
+}
+
+.Mredirect:hover{
+  background-color: White;
+color: Green;
+ border: 2px solid green;
+ border-radius: 12px;
+
+}
+td{
+	padding-right:40px;
+  padding-left: 40px;
+
+}
+table{
+	text-align:center;
+margin:0 auto;
+
 }
