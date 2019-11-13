@@ -73,3 +73,75 @@ function DuckINC(){
 function SalmonINC(){
   Salmon++;
 }
+function ClementinesPrice(){
+  var ClementinesP=Clementines*3.97;
+  return ClementinesP;
+}
+function ApplesPrice(){
+  var ApplesP=Apples*4.47;
+  return ApplesP;
+}
+function BananasPrice(){
+  var BananasP=Bananas*1.50;
+  return BananasP;
+}
+function BroccoliPrice(){
+  var BroccoliP=Broccoli*12.94;
+  return BroccoliP;
+}
+function EggplantPrice(){
+   var EggplantP=Eggplant*3.37;
+  return EggplantP;
+}
+function LettucePrice(){
+   var LettuceP=Lettuce*2.47;
+  return LettuceP;
+}
+function CakePrice(){
+  var CakeP=Cake*6;
+  return CakeP;
+}
+function CheesePrice(){
+  var CheesesP=Cheese*14.97;
+  return CheeseP;
+}
+function ChocolatePrice(){
+  var ChocolatesP=Chocolate*6.18;
+  return ChocolateP;
+}
+function BrowniesPrice(){
+  var BrowniesP=Brownies*6;
+  return BrowniesP;
+}
+function FritterPrice(){
+  var FritterP=Fritter*1.16;
+  return FritterP;
+}
+function DonutsPrice(){
+  var DonutsP=Donuts*2.27;
+  return DonutsP;
+}
+function SteakPrice(){
+  var SteakP=Steak*12.48;
+  return SteakP;
+}
+function ChickenPrice(){
+  var ChickenP=Chicken*7;
+  return ChickenP;
+}
+function PorkPrice(){
+  var PorkP=Pork*9.86;
+  return PorkP;
+}
+function SalmonPrice(){
+  var SalmonP=Salmon*21.64;
+  return SalmonP;
+}
+function DuckPrice(){
+  var DuckP=Duck*19.9;
+  return DuckP;
+}
+function LobsterPrice(){
+  var LobsterP=Lobster*14.67;
+  return LobsterP;
+}
