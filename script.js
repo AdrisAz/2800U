@@ -16,7 +16,7 @@ var Pork=0;
 var Lobster=0;
 var Salmon=0;
 var Duck=0;
- sessionStorage.setItem("Clementines","0");
+/*sessionStorage.setItem("Clementines","0");
  sessionStorage.setItem("Apples","0");
  sessionStorage.setItem("Bananas","0");
  sessionStorage.setItem("Broccoli","0");
@@ -34,15 +34,16 @@ var Duck=0;
  sessionStorage.setItem("Lobster","0");
  sessionStorage.setItem("Salmon","0");
  sessionStorage.setItem("Duck","0");
-
-
+*/
+//Testing Functions
 function ClementinesINC(){
+var num=Clementines;
+num++
+var obj =document.getElementById('ClementinesA');
+obj.style.display='block';
+obj.innerHTML =num +" Are in Your Cart";
 
 
-var num= sessionStorage.getItem("Clementines");
-var num2=num + 1;
- sessionStorage.setItem("Clementines",num2);
-num= sessionStorage.getItem("Clementines");
 return num;
 }
 function ApplesINC(){
