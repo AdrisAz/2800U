@@ -1,4 +1,4 @@
-var Clementines=0;
+/*var Clementines=0;
 var Apples=0;
 var Bananas=0;
 var Broccoli=0;
@@ -15,7 +15,7 @@ var Chicken=0;
 var Pork=0;
 var Lobster=0;
 var Salmon=0;
-var Duck=0;
+var Duck=0;*/
 /*sessionStorage.setItem("Clementines","0");
  sessionStorage.setItem("Apples","0");
  sessionStorage.setItem("Bananas","0");
@@ -33,10 +33,17 @@ var Duck=0;
  sessionStorage.setItem("Pork","0");
  sessionStorage.setItem("Lobster","0");
  sessionStorage.setItem("Salmon","0");
- sessionStorage.setItem("Duck","0");
-*/
+ sessionStorage.setItem("Duck","0");*/
+
+
+
+
+
+
 //Testing Functions
-function ClementinesINC(){
+/*function ClementinesINC(){
+  var test =sessionStorage.getItem("Clementines");
+  alter(test);
 var num=Clementines;
 num++
 var obj =document.getElementById('ClementinesA');
@@ -45,7 +52,7 @@ obj.innerHTML =num +" Are in Your Cart";
 
 
 return num;
-}
+}*/
 function ApplesINC(){
   var num= sessionStorage.getItem("Apples");
   num++;
