@@ -16,132 +16,237 @@ var Pork=0;
 var Lobster=0;
 var Salmon=0;
 var Duck=0;
-
+ sessionStorage.setItem("Clementines","0");
+ sessionStorage.setItem("Apples","0");
+ sessionStorage.setItem("Bananas","0");
+ sessionStorage.setItem("Broccoli","0");
+ sessionStorage.setItem("Eggplant","0");
+ sessionStorage.setItem("Lettuce","0");
+ sessionStorage.setItem("Cake","0");
+ sessionStorage.setItem("Cheese","0");
+ sessionStorage.setItem("Chocolate","0");
+ sessionStorage.setItem("Brownies","0");
+ sessionStorage.setItem("Fritter","0");
+ sessionStorage.setItem("Donuts","0");
+ sessionStorage.setItem("Streak","0");
+ sessionStorage.setItem("Chicken","0");
+ sessionStorage.setItem("Pork","0");
+ sessionStorage.setItem("Lobster","0");
+ sessionStorage.setItem("Salmon","0");
+ sessionStorage.setItem("Duck","0");
 
 
 function ClementinesINC(){
-  Clementines++;
+
+
+var num= sessionStorage.getItem("Clementines");
+var num2=num + 1;
+ sessionStorage.setItem("Clementines",num2);
+num= sessionStorage.getItem("Clementines");
+return num;
 }
 function ApplesINC(){
-  Apples++;
+  var num= sessionStorage.getItem("Apples");
+  num++;
+
+  return num;
 }
 function BananasINC(){
-  Bananas++;
+  var num= sessionStorage.getItem("Bananas");
+  num++;
+
+  return num;
 }
 function BroccoliINC(){
-  Broccoli++;
+  var num= sessionStorage.getItem("Broccoli");
+  num++;
+
+  return num;
 }
 function EggplantINC(){
-  Eggplant++;
+  var num= sessionStorage.getItem("Eggplant");
+  num++;
+
+  return num;
 }
 function LettuceINC(){
-  Lettuce++;
+  var num= sessionStorage.getItem("Lettuce");
+  num++;
+
+  return num;
 }
 function CakeINC(){
-  Cake++;
+  var num= sessionStorage.getItem("Cake");
+  num++;
+
+  return num;
 }
 function CheeseINC(){
-  Cheese++;
+  var num= sessionStorage.getItem("Cheese");
+  num++;
+
+  return num;
 }
 function ChocolateINC(){
-  Chocolate++;
+  var num= sessionStorage.getItem("Chocolate");
+  num++;
+
+  return num;
 }
 function BrowniesINC(){
-  Brownies++;
+  var num= sessionStorage.getItem("Brownies");
+  num++;
+
+  return num;
 }
 function FritterINC(){
-  Fritter++;
+  var num= sessionStorage.getItem("Fritter");
+  num++;
+
+  return num;
 }
 function DonutsINC(){
-  Donuts++;
+  var num= sessionStorage.getItem("Donuts");
+  num++;
+
+  return num;
 }
 function SteakINC(){
-  Steak++;
+  var num= sessionStorage.getItem("Steak");
+  num++;
+
+  return num;
 }
 function ChickenINC(){
-  Chicken++;
+  var num= sessionStorage.getItem("Chicken");
+  num++;
+
+  return num;
 }
 function PorkINC(){
-  Pork++;
+  var num= sessionStorage.getItem("Pork");
+  num++;
+
+  return num;
 }
 function LobsterINC(){
-  Lobster++;
+  var num= sessionStorage.getItem("Lobster");
+  num++;
+
+  return num;
 }
 function DuckINC(){
-  Duck++;
+  var num= sessionStorage.getItem("Duck");
+  num++;
+
+  return num;
 }
 function SalmonINC(){
-  Salmon++;
+  var num= sessionStorage.getItem("Salmon");
+  num++;
+
+  return num;
 }
 function ClementinesPrice(){
-  var ClementinesP=Clementines*3.97;
-  return ClementinesP;
+var num= ClementinesINC();
+  var clementinesP=num*3.97;
+  return clementinesP;
 }
 function ApplesPrice(){
-  var ApplesP=Apples*4.47;
-  return ApplesP;
+  var num= ApplesINC();
+  var applesP=num*4.47;
+  return applesP;
 }
 function BananasPrice(){
-  var BananasP=Bananas*1.50;
-  return BananasP;
+  var num= BananasINC();
+  var bananasP=num*1.50;
+  return bananasP;
 }
 function BroccoliPrice(){
-  var BroccoliP=Broccoli*12.94;
-  return BroccoliP;
+  var num= BroccoliINC();
+  var broccoliP=num*12.94;
+  return broccoliP;
 }
 function EggplantPrice(){
-   var EggplantP=Eggplant*3.37;
-  return EggplantP;
+  var num= EggplantINC();
+   var eggplantP=num*3.37;
+  return eggplantP;
 }
 function LettucePrice(){
-   var LettuceP=Lettuce*2.47;
-  return LettuceP;
+  var num= LettuceINC();
+   var lettuceP=num*2.47;
+  return lettuceP;
 }
 function CakePrice(){
-  var CakeP=Cake*6;
-  return CakeP;
+  var num= CakeINC();
+  var cakeP=num*6;
+  return cakeP;
 }
 function CheesePrice(){
-  var CheesesP=Cheese*14.97;
-  return CheeseP;
+  var num= CheeseINC();
+  var cheesesP=num*14.97;
+  return cheeseP;
 }
 function ChocolatePrice(){
-  var ChocolatesP=Chocolate*6.18;
-  return ChocolateP;
+  var num= ChocolateINC();
+  var chocolatesP=num*6.18;
+  return chocolateP;
 }
 function BrowniesPrice(){
-  var BrowniesP=Brownies*6;
-  return BrowniesP;
+  var num= BrowinesINC();
+  var browniesP=num*6;
+  return browniesP;
 }
 function FritterPrice(){
-  var FritterP=Fritter*1.16;
-  return FritterP;
+  var num= FritterINC();
+  var fritterP=num*1.16;
+  return fritterP;
 }
 function DonutsPrice(){
-  var DonutsP=Donuts*2.27;
-  return DonutsP;
+  var num= DunutsINC();
+  var donutsP=num*2.27;
+  return donutsP;
 }
 function SteakPrice(){
-  var SteakP=Steak*12.48;
-  return SteakP;
+  var num= SteakINC();
+  var steakP=num*12.48;
+  return steakP;
 }
 function ChickenPrice(){
-  var ChickenP=Chicken*7;
-  return ChickenP;
+  var num= ChickenINC();
+  var chickenP=num*7;
+  return chickenP;
 }
 function PorkPrice(){
-  var PorkP=Pork*9.86;
-  return PorkP;
+  var num= PorkINC();
+  var porkP=num*9.86;
+  return porkP;
 }
 function SalmonPrice(){
-  var SalmonP=Salmon*21.64;
-  return SalmonP;
+  var num= SalmonINC();
+  var salmonP=num*21.64;
+  return salmonP;
 }
 function DuckPrice(){
-  var DuckP=Duck*19.9;
-  return DuckP;
+  var num= DuckINC();
+  var duckP=num*19.9;
+  return duckP;
 }
 function LobsterPrice(){
-  var LobsterP=Lobster*14.67;
-  return LobsterP;
+  var num= LobsterINC();
+  var lobsterP=num*14.67;
+  return lobsterP;
+}
+function ClementinesDisplay(){
+    var num= ClementinesINC();
+    var  item= ClementinesPrice();
+
+    var obj =document.getElementById('ClementinesA');
+    obj.style.display='block';
+	obj.innerHTML =num +" Are in Your Cart";
+
+  var obj2 = document.getElementById('ClementinesPr');
+  obj2.style.display='block';
+obj2.innerHTML ="$"+item.toFixed(2);
+
 }
