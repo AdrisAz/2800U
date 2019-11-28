@@ -13,12 +13,15 @@ font-size: 19px;
 }
 
 .topnav {
-background-color:rgb(255,255,155) ;
+background-color:rgb(255,255,155);
 overflow: hidden;
 border:1px solid black;
 width:1050px;
 margin:0 auto;
+transition: all 0.5s ease;
+
 }
+
 .topnav a {
 float: left;
 color:black;
@@ -26,10 +29,12 @@ text-align: center;
 padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
+
 }
 .topnav a:hover  {
-background-color:grey;
+background-color: rgb(149,200,255);
 color: black;
+
 }
 .topnav a.active {
 background-color:Black;
@@ -70,6 +75,29 @@ color: Green;
  border-radius: 12px;
 
 }
+
+.Navbar {
+  background-color: Green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+
+  font-size: 16px;
+  width:200px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+border: 2px solid green;
+}
+
+.Navbar:hover{
+  background-color: White;
+color: Green;
+ border: 2px solid green;
+
+}
+
 .cart {
   background-color: rgb(68,162,255);
   border: none;
