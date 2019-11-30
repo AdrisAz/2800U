@@ -5,11 +5,32 @@
     		<link rel="stylesheet" href="main.css">
 
     	<title>Sign Up</title>
-    	<h1>Welcome to the Log In form</h1>
+    <center>	<h1>Welcome to the Log In form</h1></center>
+      <div class="topnav">
+        <input type="button" class="Navbar" value="Home" onclick="location.href='index.html';">
+    <input type="button" class="Navbar" value="Fruits and Vegetables" onclick="location.href='index2.html';">
+      <input type="button" class="Navbar" value="Desserts" onclick="location.href='index3.html';">
+        <input type="button" class="Navbar" value="Meats" onclick="location.href='index4.html';">
+          <input type="button" class="Navbar"  value="Cart" onclick="location.href='cart.html';">
+            <input type="button"  class="active"value="Login In" onclick="location.href='Login.html';">
+            <input type="button" class="Navbar" value="Sign up" onclick="location.href='Signup.html';">
+
+              <!--	<a class="active" href="index.html">Home</a>
+              <input type="button" class="Navbar" value="Fruits and Vegetables" onclick="location.href='index2.html';">
+
+              <a href="index2.html">Fruit and Vegetable</a>
+
+              <a href="index3.html">Desserts</a>
+              <a href="index4.html">Meats</a>
+              <a href="cart.html">Cart</a>
+              <a href="Login.html">Log In</a>
+              <a href="Signup.html">Sign Up</a>
+                -->
+            </div>
     </head>
     <body>
     	<form action="form.php" method="post">
-    		<fieldset class="fcolor">
+    		<fieldset   class="Fields"class="fcolor">
     			<table>
 
     <tr><td> User Name</td> <td>Password</td>	</tr>
@@ -18,10 +39,11 @@
     <td> <input type='password' name='pass' id='pass' placeholder="please enter a password"></td></tr>
 
     			</table>
+          <center>
     			<input type="submit" name="Log up" value="Log In" class="submits">
 
-    			<input type="button" onclick="location.href='Index.html'" value="go back to sign up page">
-
+    			<input type="button" onclick="location.href='Signup.html'" value="Sign up page" class="Mredirect2">
+</center>
             </fieldset>
 
     	</form>
