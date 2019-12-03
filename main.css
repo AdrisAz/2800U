@@ -2,6 +2,10 @@ h1 {
 
 
   font-family: sans-serif;
+  font-size:300%;
+}
+h2{
+  font-size:200%;
 }
 .Fields{
   background-color:white;

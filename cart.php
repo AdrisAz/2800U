@@ -1,7 +1,10 @@
 <?php
 
-include_once("ShoppingCart.class.php");
 session_start();
+$connect=mysqli_connect("localhost","password", "dbname");
+
+$query="SELECT * FROM tbl_product ORDER BY id ASC";
+$result=mysqli_query($connect,$query);
 
 if(isset($_SESSION['user'])) {
 
