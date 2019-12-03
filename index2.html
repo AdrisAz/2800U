@@ -1,42 +1,39 @@
+<?php
+session_start();
+$connect=mysqli_connect("localhost","username","password","dbname")
+?>
 <!DOCTYPE html>
 <html>
 <head>
   <script src="script.js"></script>
   <?php include 'food.php';?>
   <link rel="stylesheet" href="main.css">
-  <title>Ontario Food Mart Fruits and Vegetables</title>
-  <h1 class="center">Fruit or Vegetable</h1>
+  <title>Ontario Food Mart Products</title>
+  <h1 class="center">Products</h1>
   <div class="topnav">
     <input type="button" class="Navbar" value="Home" onclick="location.href='index.html';">
-<input type="button" class="active" value="Fruits and Vegetables" onclick="location.href='index2.html';">
-  <input type="button" class="Navbar" value="Desserts" onclick="location.href='index3.html';">
-    <input type="button" class="Navbar" value="Meats" onclick="location.href='index4.html';">
-      <input type="button" class="Navbar" value="Cart" onclick="location.href='cart.html';">
-        <input type="button" class="Navbar" value="Login In" onclick="location.href='Login.html';">
-        <input type="button" class="Navbar" value="Sign up" onclick="location.href='Signup.html';">
-
-          <!--	<a class="active" href="index.html">Home</a>
-          <input type="button" class="Navbar" value="Fruits and Vegetables" onclick="location.href='index2.html';">
-
-          <a href="index2.html">Fruit and Vegetable</a>
-
-          <a href="index3.html">Desserts</a>
-          <a href="index4.html">Meats</a>
-          <a href="cart.html">Cart</a>
-          <a href="Login.html">Log In</a>
-          <a href="Signup.html">Sign Up</a>
-            -->
-        </div>
+    <input type="button" class="active" value="Products" onclick="location.href='index2.html';">
+    <input type="button" class="Navbar" value="Cart" onclick="location.href='cart.html';">
+    <input type="button" class="Navbar" value="Login In" onclick="location.href='Login.html';">
+    <input type="button" class="Navbar" value="Sign up" onclick="location.href='Signup.html';">
+  </div>
 </head>
 <body>
-  <form class="1" action="food.php" method="post">
 
-  </form>
+  <?php
+  $query="SELECT * FROM tbl_product ORDER BY id ASC";
+  $result=mysqli_query($connect,$query);
+  if(mysqli_num_rows($result)>0)
+  {
+  while($row=mysqli_fetch_array($result))
+  {
+  ?>
+
+<form method="post" action="index.php? action=Add&id= <?php echo $row["id"]; ?>" >
   <fieldset  class="Fields">
 <div class="center">
 <h1>Add a fruit or vegetable to your cart!</h1>
 </div>
-
 <table>
   <tr>
 <td>  <img src="images/Clementines.jfif" class="size" >  </td>
@@ -70,7 +67,93 @@
   <td> <input type="button" name="Lettuce" onclick="LettuceINC()" value="Add to Cart" class="cart"></td>
 </tr>
   </table>
+
+
+
+  <div class="center">
+  <h1>Add a Dessert to your cart!</h1>
+  </div>
+
+  <table>
+    <tr>
+  <td>  <img src="images/Cake.jpg" class="size" >  </td>
+  <td>  <img src="images/Cheese.jpg" class="size"></td>
+  <td>  <img src="images/Chocolate.jpg" class="size"></td>
+  </tr>
+  <tr>
+    <td><label>Chocolate Cake $6.00</label></td>
+    <td><label>Vanilla Cheese Cake $14.97</label></td>
+    <td><label>Chocolate IceCream $6.18</label></td>
+  </tr>
+  <tr>
+    <td><input type="button" name="Cake" onclick="CakeINC()" value="Add to Cart" class="cart"> </td>
+    <td><input type="abutton" name="Cheese" onclick="CheeseINC()" value="Add to Cart" class="cart"> </td>
+    <td><input type="button" name="Chocolate" onclick="ChocolateINC()" value="Add to Cart" class="cart"> </td>
+
+  </tr>
+  <tr>
+    <td> <img src="images/Brownie.jpg" class="size"></td>
+    <td> <img src="images/Fritter.jpg" class="size"></td>
+    <td> <img src="images/Donuts.jpg" class="size"></td>
+  </tr>
+  <tr>
+    <td><label>A Dozen Brownies $6.00</label></td>
+    <td><label> Apple Fritter $1.16</label></td>
+    <td><label>A Dozen Doughnuts $2.27</label></td>
+  </tr>
+  <tr>
+    <td> <input type="button" name="Brownie" onclick="BrowniesINC()" value="Add to Cart" class="cart"></td>
+    <td> <input type="button" name="Fritter" onclick=BrowniesINC()"" value="Add to Cart" class="cart"></td>
+    <td> <input type="button" name="Doughnuts" onclick="DonutsINC()" value="Add to Cart" class="cart"></td>
+  </tr>
+    </table>
+
+
+
+    <div class="center">
+    <h1>Add Meats to your cart!</h1>
+    </div>
+
+    <table>
+      <tr>
+    <td>  <img src="images/steak.png" class="size" >  </td>
+    <td>  <img src="images/chicken.jpg" class="size"></td>
+    <td>  <img src="images/Pork.jpg" class="size"></td>
+    </tr>
+    <tr>
+      <td><label>8 oz Sterloin Steak $12.48</label></td>
+      <td><label>Rotisserie Chicken $7.00 </label></td>
+      <td><label>4 Pork Chops $9.86</label></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="Steak" onclick="SteakINC()" value="Add to Cart" class="cart"> </td>
+      <td><input type="button" name="Chicken" onclick="ChickenINC()" value="Add to Cart" class="cart"> </td>
+      <td><input type="button" name="Pork" onclick="PorkINC()" value="Add to Cart" class="cart"> </td>
+
+    </tr>
+    <tr>
+      <td> <img src="images/Salmon.jpg" class="size"></td>
+      <td> <img src="images/duck.jpg" class="size"</td>
+      <td> <img src="images/Lobster.jpg" class="size"</td>
+    </tr>
+    <tr>
+      <td><label>Salmon $21.64 </label></td>
+      <td><label>Duck $19.90</label></td>
+      <td><label>Atlantic Lobster $14.67</label></td>
+    </tr>
+    <tr>
+      <td> <input type="button" name="Salmon" onclick="SalmonINC()" value="Add to Cart" class="cart"></td>
+      <td> <input type="button" name="Duck" onclick="DuckINC()" value="Add to Cart" class="cart"></td>
+      <td> <input type="button" name="Lobster" onclick="LobsterINC()" value="Add to Cart" class="cart"></td>
+    </tr>
+      </table>
+
+
     </fieldset>
   </form>
+<?php
+}
+}
+?>
 </body>
 </html>
