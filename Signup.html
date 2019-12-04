@@ -21,19 +21,19 @@
 	<form action="Signup.php" method="post" >
 
 		<div class="container" style="width:1000px">
-			
+<div class="quick">
 			<table class="center">
 			<tr><td> First Name</td> <td>Last name</td>	</tr>
-			<tr><td> <input type='text' name='Fname' onkeyup="lettersOnly(this)" id='Fname' placeholder="Please enter first name"></td>
+			<tr><td> <input  class="test" type='text' name='Fname' onkeyup="lettersOnly(this)" id='Fname' placeholder="Please enter first name"></td>
 			<td> <input type='text' name='Lname' id='Lname' onkeyup="lettersOnly(this)" placeholder="Please enter last name"></td>
 			<tr><td> User Name</td> <td>Password</td>	</tr>
-			<tr><td> <input type='text' name='Uname' id='Uname' placeholder="Please enter a user name"></td>
+			<tr><td> <input class="test" type='text' name='Uname' id='Uname' placeholder="Please enter a user name"></td>
 			<td> <input type='password' name='pass' id='pass' placeholder="Please enter a password"></td></tr>
 			</table>
 			<br/>
 			<center>
 			<input type="submit" name="Sign up" onclick="SignupValidate()"  id='signup' value="Sign up" class="submits">
-
+</div>
 			</center>
 		</div>
 	</form>
