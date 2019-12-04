@@ -5,47 +5,34 @@
 		<link rel="stylesheet" href="main.css">
 
 	<title>Sign Up</title>
-	<center><h1>Welcome to a sign up form</h1></center>
+	<center><h1>Welcome to the sign up form</h1></center>
 	<div class="topnav">
-		<input type="button" class="Navbar" value="Home" onclick="location.href='index.html';">
-		<input type="button" class="Navbar" value="Products" onclick="location.href='index2.html';">
-		<input type="button" class="Navbar"  value="Cart" onclick="location.href='cart.html';">
-		<input type="button"  class="Navbar" value="Login In" onclick="location.href='Login.html';">
+		<input type="button" class="Navbar" value="Home" onclick="location.href='index.php';">
+		<input type="button" class="Navbar" value="Products" onclick="location.href='index2.php';">
+		<input type="button"  class="Navbar" value="Login" onclick="location.href='Login.html';">
 		<input type="button" class="active" value="Sign up" onclick="location.href='Signup.html';">
 	</div>
 </head>
+<br/>
 <body>
 	<form action="Signup.php" method="post" >
 
-
-		<fieldset  class="Fields" class="fcolor">
-
+		<div class="container" style="width:1000px">
 
 			<table class="center">
-
-
-
-<tr><td> First Name</td> <td>Last name</td>	</tr>
-<tr><td> <input type='text' name='Fname' id='Fname' placeholder="please enter first name"></td>
-<td> <input type='text' name='Lname' id='Lname' placeholder="please enter last name"></td>
-
-<tr><td> User Name</td> <td>Password</td>	</tr>
-
-<tr><td> <input type='text' name='Uname' id='Uname' placeholder="please enter a User name"></td>
-<td> <input type='password' name='pass' id='pass' placeholder="please enter a password"></td></tr>
-
-
-
-
+			<tr><td> First Name</td> <td>Last name</td>	</tr>
+			<tr><td> <input type='text' name='Fname' id='Fname' placeholder="Please enter first name"></td>
+			<td> <input type='text' name='Lname' id='Lname' placeholder="Please enter last name"></td>
+			<tr><td> User Name</td> <td>Password</td>	</tr>
+			<tr><td> <input type='text' name='Uname' id='Uname' placeholder="Please enter a user name"></td>
+			<td> <input type='password' name='pass' id='pass' placeholder="Please enter a password"></td></tr>
 			</table>
-<center>
-					<input type="submit" name="Sign up" value="Sign up" class="submits">
-						<input type="button" onclick="location.href='Login.html'" value="Login page" class="Mredirect2">
-</center>
+			<br/>
+			<center>
+			<input type="submit" name="Sign up"  id='signup' value="Sign up" class="submits">
 
-        </fieldset>
-
+			</center>
+		</div>
 	</form>
-
 </body>
 </html>

@@ -1,174 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="main.css">
-  <title>Ontario Food Mart Cart</title>
-  <h1 class="center">Cart</h1>
-  <div class="topnav">
-		<input type="button" class="Navbar" value="Home" onclick="location.href='index.html';">
-    <input type="button" class="Navbar" value="Products" onclick="location.href='index2.html';">
-		<input type="button" class="active"  value="Cart" onclick="location.href='cart.html';">
-		<input type="button"  class="Navbar" value="Login In" onclick="location.href='Login.html';">
-		<input type="button"  class="Navbar" value="Sign up" onclick="location.href='Signup.html';">
-	</div>
-</head>
-<body onload="ClementinesDisplay()">
-  <fieldset  class="Fields">
-<h2 class="center">Items in Your Cart</h2>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/JavaScript" src="Validation.js"></script>
 
-<table class="center">
-  <tr>
-    <td><div id="ClementinesA">
-    </div></td>
-    <td><div id="ClementinesPr">
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="ApplesA">
-
-    </div></td>
-    <td><div class="ApplesPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="BananasA">
-
-    </div></td>
-    <td><div class="BananasPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="BroccoliA">
-
-    </div></td>
-    <td><div class="BroccoliPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="EggplantA">
-
-    </div></td>
-    <td><div class="EggplantPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="LettuceA">
-
-    </div></td>
-    <td><div class="LettucePr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="CakeA">
-
-    </div></td>
-    <td><div class="CakePr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="CheeseA">
-
-    </div></td>
-    <td><div class="CheesePr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="ChocolateA">
-
-    </div></td>
-    <td><div class="ChocolatePr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="BrowniesA">
-
-    </div></td>
-    <td><div class="BrowniesPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="FritterA">
-
-    </div></td>
-    <td><div class="FritterPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="DonutsA">
-
-    </div></td>
-    <td><div class="DonutsPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="SteakA">
-
-    </div></td>
-    <td><div class="SteakPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="ChickenA">
-
-    </div></td>
-    <td><div class="ChickenPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="PorkA">
-
-    </div></td>
-    <td><div class="PorkPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="SalmonA">
-
-    </div></td>
-    <td><div class="SalmonPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="DuckA">
-
-    </div></td>
-    <td><div class="DuckPr">
-
-    </div></td>
-  </tr>
-  <tr>
-    <td><div class="LobsterA">
-
-    </div></td>
-    <td><div class="LobsterPr">
-
-    </div></td>
-  </tr>
-
-
-  <tr>
-    <td><div class="Total">
-
-    </div></td>
-  </tr>
-  <tr><td><input type="submit" onclick="location.href='Card.html'"></td></tr>
+    <title>Welcome to the checkout out page</title>
+    <h1 class="center">Checkout</h1>
+    <div class="topnav">
+      <input type="button" class="Navbar" value="Home" onclick="location.href='index.php';">
+      <input type="button" class="Navbar" value="Products" onclick="location.href='index2.php';">
+      <input type="button"  class="Navbar" value="Login" onclick="location.href='Login.html';">
+      <input type="button"  class="Navbar" value="Sign up" onclick="location.href='Signup.html';">
+    </div>
+  </head>
+  <body>
+    <form>
+      <br/>
+        <div class="container">
+<table>
+  <h1 class="center"> Credit Card</h1>
+    <div id="FNLN">
+<tr><td>First Name</td> <td>Last Name</td></tr>
+<tr><td> <input type='text' class="Fname" id="FN" placeholder="First name" required></td>
+  <td><input type='text' class="Lname" id="LN" placeholder="Last name" required></td></tr>
+</div>
+<div id="CCNSC">
+  <tr><td> Credit Card Number:</td> <td> Security Number:</td></tr>
+  <tr><td> <input type='value' class="CCN" id="Cnumber" maxlength="19" required><br>
+    <li class="rq">*Enter numbers only.</li></td>
+    <td><input type='text' class="SN" id="Snumber" maxlength="3" required><br>
+      <li class="rq">*Enter numbers only.</li></td></tr>
+</div>
+    <tr><td> Expiration Month</td> <td>Expiration year</td></tr>
+    <tr><td> <select class="Mselect" id="SelectM">
+      <option> 01</option>
+      <option> 02</option>
+      <option> 03</option>
+      <option> 04</option>
+      <option> 05</option>
+      <option> 06</option>
+      <option> 07</option>
+      <option> 08</option>
+      <option> 09</option>
+      <option> 10</option>
+      <option> 11</option>
+      <option> 12</option>
+</select>
+    </td>
+<td> <select class="Yselect" id="SelectY">
+  <option>Please pick a year</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+</td>
+</tr>
 </table>
-    </fieldset>
-</body>
+
+<h2 class="center">Shipping Address</h2>
+<table>
+<tr><td>Street Address:</td> <td>Street Address line 2:</td></tr>
+<tr><td> <input type="text" name="SA" size="25" required></td>
+  <td><input type="text" name="SA2" size="25" required></td></tr>
+  <tr><td> City:</td> <td> State/Province:</td></tr>
+  <tr><td> <input type="text" name="C" size="25" required></td>
+    <td><input type="text" name="PC" size="25" required></td></tr>
+</table>
+<br><br>
+<center
+	<td> <select id="Country" required>
+    <option>Please select Country: </option>
+    <option>Canada</option>
+    <option>USA</option>
+
+	</select></td>
+</center>
+
+  <center>
+<tr><td><h2>Delivery Date:</h2></td></tr>
+<tr><td> <input type="date" name="DM"> </input>
+  <tr><td><h2>Email:</h2></td></tr>
+<tr><td> <input type="email" name="email" size="40" required></input></td></tr>
+<tr><td><br><br><input type="button" class="success" value="Submit" onclick="location.href='Success.html';"></td></tr><br><br>
+</center>
+</table>
+</div>
+</form>
+  </body>
 </html>

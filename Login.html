@@ -5,31 +5,33 @@
     		<link rel="stylesheet" href="main.css">
 
     	<title>Sign Up</title>
-    <center>	<h1>Welcome to the Log In form</h1></center>
+    <center>	<h1>Welcome to the Login form</h1> </center>
       <div class="topnav">
-        <input type="button" class="Navbar" value="Home" onclick="location.href='index.html';">
-        <input type="button" class="Navbar" value="Products" onclick="location.href='index2.html';">
-        <input type="button" class="Navbar"  value="Cart" onclick="location.href='cart.html';">
-        <input type="button"  class="active"value="Login In" onclick="location.href='Login.html';">
+        <input type="button" class="Navbar" value="Home" onclick="location.href='index.php';">
+        <input type="button" class="Navbar" value="Products" onclick="location.href='index2.php';">
+        <input type="button"  class="active"value="Login" onclick="location.href='Login.html';">
         <input type="button" class="Navbar" value="Sign up" onclick="location.href='Signup.html';">
       </div>
     </head>
+    <br/>
+  <div class="container" style="width:1000px">
+
     <body>
-    	<form action="form.php" method="post">
-    		<fieldset   class="Fields"class="fcolor">
+    	<form action="Login.php" method="post">
     			<table>
 
     <tr><td> User Name</td> <td>Password</td>	</tr>
 
-    <tr><td> <input type='text' name='Uname' id='Uname' placeholder="please enter a User name"></td>
-    <td> <input type='password' name='pass' id='pass' placeholder="please enter a password"></td></tr>
+    <tr><td> <input type='text' name='Uname' id='Uname' placeholder="Please enter a user name"></td>
+    <td> <input type='password' name='pass' id='pass' placeholder="Please enter a password"></td></tr>
 
     			</table>
+          <br/>
           <center>
-    			<input type="submit" name="Log up" value="Log In" class="submits">
+    			<input type="submit" name="Log in" value="Login" class="submits">
 
-    			<input type="button" onclick="location.href='Signup.html'" value="Sign up page" class="Mredirect2">
-</center>
+    			<input type="button" onclick="location.href='Signup.html'" value="Sign up" class="Mredirect2">
+        </center>
             </fieldset>
 
     	</form>
