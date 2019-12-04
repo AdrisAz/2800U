@@ -16,6 +16,38 @@ h2{
 #Open{
 font-size: 19px;
 }
+input[type=text], select,input[type=password] input[type=number],input[type=date],input[type=email] {
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+
+
+}
+#sub{
+  background-color: rgb(200,57,57);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+
+  font-size: 16px;
+  width:200px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+
+border: 2px solid rgb(255,57,57);
+}
+#sub:hover{
+  background-color: White;
+color: Red;
+ border: 2px solid rgb(240,57,57);
+ border-radius: 12px;
+
+}
 
 .topnav {
 background-color:rgb(255,255,155);

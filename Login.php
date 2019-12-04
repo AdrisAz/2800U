@@ -18,8 +18,17 @@ if(isset($_POST['Uname'])){
 	$password=$_POST['pass'];
 }
 
+if($username===""||$username==="NULL"||$password===""||$password==="NULL"){
+  //Didn't Figure this out
+$alert= "A UserName and Password must be entered, Try again";
+echo "<script type='text/javascript'>alert('$alert');</script>";
 
+
+exit();
+
+}else{
 $sql="SELECT * FROM users WHERE Uname='".$username."' AND pass='".$password."' LIMIT 1";
+}
 $res=mysqli_query($conn,$sql);
 
 
