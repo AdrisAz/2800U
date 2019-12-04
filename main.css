@@ -16,7 +16,7 @@ h2{
 #Open{
 font-size: 19px;
 }
-input[type=text], select,input[type=password] input[type=number],input[type=date],input[type=email] {
+input[type=text], select, input[type=password], input[type=number],input[type=date],input[type=email] {
 
   padding: 12px 20px;
   margin: 8px 0;
@@ -259,9 +259,7 @@ font-size: 10pt;
   background-color:green;
 }
 
-#Uname, #pass, #Fname, #Lname  {
-  padding: 8px;
-}
+
 .welcome-text {
   text-align: center;
   font-size: 1.3em;
